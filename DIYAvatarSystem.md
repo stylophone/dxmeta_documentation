@@ -20,10 +20,10 @@ SkinnedMeshRenderer smr = DIYAvatarSystem.Instance.AddPortion(GameObject contain
 
 ### 设置皮肤
 ```
-DIYAvatarSystem.Instance.SetSkin(SkinnedMeshRenderer smr, int id);
+DIYAvatarSystem.Instance.SetSkin(SkinnedMeshRenderer smr, int resourceId);
 DIYAvatarSystem.Instance.SetSkin(SkinnedMeshRenderer skinnedMeshRenderer, Texture2D texture);
 ```
-更换SkinnedMeshRenderer贴图。
+更换SkinnedMeshRenderer贴图。可以只传资源Id，会自己去查表取Texture。
 
 完整用例：
 ```
