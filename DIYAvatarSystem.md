@@ -1,6 +1,22 @@
 # DIYAvatarSystem API
 
-### 获取表格
+### 获取资源数据
+```
+DIYAvatarSystem.Instance.GetResDatasByCatalog(DIYCatalog catalog);
+DIYAvatarSystem.Instance.GetResDatasByType(DIYType type);
+```
+
+### 获取所有可用分类
+```
+var catalogs = DIYAvatarSystem.Instance.GetCatalogs();
+foreach (var catalog in catalogs)
+{
+    var displayName = catalog.DisplayName;  // 显示名称
+    var type = catalog.Type;                // 类型
+}
+```
+
+### 获取原始表格
 ```
 DIYAvatarSystem.Instance.GetTable();
 ```
