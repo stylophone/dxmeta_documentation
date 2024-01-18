@@ -34,13 +34,14 @@ DIYAvatarSystem.Instance.SetSkin(hair, Texture2D.white);
 
 ### 获取资源数据
 ```
-DIYAvatarSystem.Instance.GetResDatasByCatalog(DIYCatalog catalog);
-DIYAvatarSystem.Instance.GetResDatasByType(DIYType type);
+DIYAvatarSystem.Instance.GetResDatas(DIYCatalog catalog);
+DIYAvatarSystem.Instance.GetResDatas(DIYType type);
 ```
 
 ### 获取所有可用分类
 ```
 var catalogs = DIYAvatarSystem.Instance.GetCatalogs();
+
 foreach (var catalog in catalogs)
 {
     var displayName = catalog.DisplayName;  // 显示名称
