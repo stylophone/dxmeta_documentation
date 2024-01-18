@@ -34,6 +34,7 @@ DIYAvatarSystem.Instance.SetSkin(hair, Texture2D.white);
 
 ### 获取资源数据
 ```
+DIYAvatarSystem.Instance.GetResDatas(params int[] ids);
 DIYAvatarSystem.Instance.GetResDatas(DIYCatalog catalog);
 DIYAvatarSystem.Instance.GetResDatas(DIYType type);
 ```
