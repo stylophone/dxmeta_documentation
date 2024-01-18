@@ -1,5 +1,11 @@
 # DIYAvatarSystem API
 
+### 获取原始表格
+```
+DIYAvatarSystem.Instance.GetTable();
+```
+获取模型资源表格。
+
 ### 获取资源数据
 ```
 DIYAvatarSystem.Instance.GetResDatasByCatalog(DIYCatalog catalog);
@@ -15,12 +21,6 @@ foreach (var catalog in catalogs)
     var type = catalog.Type;                // 类型
 }
 ```
-
-### 获取原始表格
-```
-DIYAvatarSystem.Instance.GetTable();
-```
-获取模型资源表格。
 
 ### 创建模型容器
 ```
