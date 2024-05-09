@@ -1,7 +1,6 @@
 ## AI App APIs
 
 - 测试服务器: http://192.168.1.200:5054/
-- Dify测试服务器: http://192.168.1.201/apps 邮箱: hww@sina.com 密码: santiren1379
 
 #### 验证方式
 
@@ -57,4 +56,5 @@ GET或POST，头部格式
 
 ------------------------------------------------------------------------------------------
 
-https://gist.github.com/azagniotov/a4b16faf0febd12efbc6c3d7370383a6
+- Dify测试服务器: http://192.168.1.201/apps 邮箱: hww@sina.com 密码: santiren1379
+- https://gist.github.com/azagniotov/a4b16faf0febd12efbc6c3d7370383a6
