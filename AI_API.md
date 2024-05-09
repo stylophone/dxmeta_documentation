@@ -2,6 +2,14 @@
 
 - https://gist.github.com/azagniotov/a4b16faf0febd12efbc6c3d7370383a6
 
+#### 验证方式
+
+使用Token
+
+> | Key              |  Value             |
+> |------------------|--------------------|
+> | Authorization    |  Bearer ${token}   |
+
 ------------------------------------------------------------------------------------------
 
 #### 主要API
@@ -28,13 +36,13 @@
 </details>
 
 <details>
- <summary><code>GET</code> <code><b>/{stub_numeric_id}</b></code> <code>(gets stub by its resource-id-{stub_numeric_id} in the YAML config)</code></summary>
+ <summary><code>POST</code> <code><b>/login</b></code> <code>登录</code></summary>
 
 ##### Parameters
 
 > | name              |  type     | data type      | description                         |
 > |-------------------|-----------|----------------|-------------------------------------|
-> | `stub_numeric_id` |  required | int ($int64)   | The specific stub numeric id        |
+> | phoneNumber       |  required | int ($int64)   | The specific stub numeric id        |
 
 ##### Responses
 
