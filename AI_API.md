@@ -1,6 +1,6 @@
 ## AI App APIs
 
-- https://gist.github.com/azagniotov/a4b16faf0febd12efbc6c3d7370383a6
+- 测试服务器: http://192.168.1.200:5054/
 
 #### 验证方式
 
@@ -55,3 +55,5 @@ GET或POST，头部格式
 </details>
 
 ------------------------------------------------------------------------------------------
+
+- https://gist.github.com/azagniotov/a4b16faf0febd12efbc6c3d7370383a6
