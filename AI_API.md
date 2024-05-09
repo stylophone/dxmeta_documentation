@@ -1,10 +1,7 @@
 ## AI App APIs
 
 - 测试服务器: http://192.168.1.200:5054/
-
-- Dify测试服务器: http://192.168.1.201/apps
-- > 邮箱: hww@sina.com
-- > 密码: santiren1379
+- Dify测试服务器: http://192.168.1.201/apps 邮箱: hww@sina.com 密码: santiren1379
 
 #### 验证方式
 
