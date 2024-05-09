@@ -1,14 +1,13 @@
-## Create beautiful REST API docs authored in Markdown
+## AI App APIs
 
-- Adopted from: https://stubby4j.com/docs/admin_portal.html
-- Inspired by Swagger API docs style & structure: https://petstore.swagger.io/#/pet
+- https://gist.github.com/azagniotov/a4b16faf0febd12efbc6c3d7370383a6
 
 ------------------------------------------------------------------------------------------
 
-#### Listing existing stubs & proxy configs as YAML string
+#### 主要API
 
 <details>
- <summary><code>GET</code> <code><b>/</b></code> <code>访问Root（无用）</code></summary>
+ <summary><code>GET</code> <code><b>/</b></code> <code>访问Root, 测试用. 无需验证</code></summary>
 
 ##### Parameters
 
@@ -18,7 +17,7 @@
 
 > | http code     | content-type                      | response                                                            |
 > |---------------|-----------------------------------|---------------------------------------------------------------------|
-> | `200`         | `text/plain;charset=UTF-8`        | YAML string                                                         |
+> | `200`         | `text/plain;charset=UTF-8`        |                                                                     |
 
 ##### Example cURL
 
