@@ -30,7 +30,7 @@ GET或POST，头部格式
 ##### Example cURL
 
 > ```
->  curl -X GET -H "Content-Type: application/json" http://localhost:8889/
+>  curl -X GET -H "Content-Type: application/json" http://192.168.1.200:5054/
 > ```
 
 </details>
