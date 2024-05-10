@@ -15,7 +15,7 @@ GET或POST，头部格式
 #### 主要API
 
 <details>
- <summary><code>GET</code> <code><b>/</b></code> <code>访问Root, 测试用. 无需验证</code></summary>
+	<summary><code>GET</code> <code><b>/</b></code> <code>访问Root, 测试用. 无需验证</code></summary>
 
 ##### Parameters
 
@@ -36,7 +36,7 @@ GET或POST，头部格式
 </details>
 
 <details>
- <summary><code>POST</code> <code><b>/login</b></code> <code>登录</code></summary>
+	<summary><code>POST</code> <code><b>/login</b></code> <code>登录</code></summary>
 
 ##### Parameters
 
@@ -56,5 +56,4 @@ GET或POST，头部格式
 
 ------------------------------------------------------------------------------------------
 
-- Dify测试服务器: http://192.168.1.201/apps 邮箱: hww@sina.com 密码: santiren1379
-- https://gist.github.com/azagniotov/a4b16faf0febd12efbc6c3d7370383a6
+https://gist.github.com/azagniotov/a4b16faf0febd12efbc6c3d7370383a6
