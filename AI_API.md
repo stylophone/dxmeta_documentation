@@ -30,7 +30,7 @@ GET或POST，头部格式
 ##### Example cURL
 
 > ```
->  curl -X GET -H "Content-Type: application/json" http://192.168.1.200:5054/
+> curl -X GET -H "Content-Type: application/json" http://192.168.1.200:5054/
 > ```
 
 </details>
@@ -75,7 +75,7 @@ GET或POST，头部格式
 ##### Example cURL
 
 > ```
->  curl -X GET https://localhost:7278/search/type?id=0
+> curl -X GET https://localhost:7278/search/type?id=0
 > ```
 
 ##### JSON返回示例
