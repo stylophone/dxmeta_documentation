@@ -76,35 +76,53 @@ GET或POST，头部格式
 ##### JSON返回示例
 
 ```
-[
-  {
-    "id": 3,
-    "name": "随便你",
-    "gender": 2,
-    "type": 0,
-    "dify_id": null,
-    "public": true,
-    "avatar": null
-  },
-  {
-    "id": 1,
-    "name": "段飞",
-    "gender": 0,
-    "type": 0,
-    "dify_id": null,
-    "public": true,
-    "avatar": null
-  },
-  {
-    "id": 2,
-    "name": "毛利兰",
-    "gender": 1,
-    "type": 0,
-    "dify_id": null,
-    "public": true,
-    "avatar": null
-  }
-]
+{
+  "tags": [
+    {
+      "id": 1,
+      "name": "校园"
+    },
+    {
+      "id": 2,
+      "name": "乙女"
+    }
+  ],
+  "agents": [
+    {
+      "id": 2,
+      "name": "毛利兰",
+      "gender": 1,
+      "type": 0,
+      "dify_id": null,
+      "public": true,
+      "avatar": null,
+      "tags": []
+    },
+    {
+      "id": 1,
+      "name": "段飞",
+      "gender": 0,
+      "type": 0,
+      "dify_id": null,
+      "public": true,
+      "avatar": null,
+      "tags": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": 3,
+      "name": "随便你",
+      "gender": 2,
+      "type": 0,
+      "dify_id": null,
+      "public": true,
+      "avatar": null,
+      "tags": []
+    }
+  ]
+}
 ```
 
 </details>
