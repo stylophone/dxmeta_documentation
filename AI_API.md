@@ -78,12 +78,13 @@ GET或POST，头部格式
 ```
 [
   {
-    "id": 2,
-    "name": "毛利兰",
-    "gender": 1,
+    "id": 3,
+    "name": "随便你",
+    "gender": 2,
     "type": 0,
     "dify_id": null,
-    "public": true
+    "public": true,
+    "avatar": null
   },
   {
     "id": 1,
@@ -91,7 +92,17 @@ GET或POST，头部格式
     "gender": 0,
     "type": 0,
     "dify_id": null,
-    "public": true
+    "public": true,
+    "avatar": null
+  },
+  {
+    "id": 2,
+    "name": "毛利兰",
+    "gender": 1,
+    "type": 0,
+    "dify_id": null,
+    "public": true,
+    "avatar": null
   }
 ]
 ```
