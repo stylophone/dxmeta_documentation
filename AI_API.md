@@ -55,7 +55,7 @@ GET或POST，头部格式
 </details>
 
 <details>
-	<summary><code>POST</code> <code><b>/search/type</b></code> <code>按类型搜索</code></summary>
+	<summary><code>GET</code> <code><b>/search/type</b></code> <code>按类型搜索</code></summary>
 
 ##### Parameters
 
@@ -68,9 +68,33 @@ GET或POST，头部格式
 
 > | Code        | Content-Type                      | Response                           |
 > |-------------|-----------------------------------|------------------------------------|
-> | `200`       | `text/plain;charset=UTF-8`        | OK (返回结构体) 					 |
+> | `200`       | `text/plain;charset=UTF-8`        | OK (返回JSON) 					 |
 > | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
 > | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
+
+
+##### JSON返回示例
+
+```
+[
+  {
+    "id": 2,
+    "name": "毛利兰",
+    "gender": 1,
+    "type": 0,
+    "dify_id": null,
+    "public": true
+  },
+  {
+    "id": 1,
+    "name": "段飞",
+    "gender": 0,
+    "type": 0,
+    "dify_id": null,
+    "public": true
+  }
+]
+```
 
 </details>
 
