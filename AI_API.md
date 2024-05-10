@@ -54,6 +54,26 @@ GET或POST，头部格式
 
 </details>
 
+<details>
+	<summary><code>POST</code> <code><b>/search/type</b></code> <code>按类型搜索</code></summary>
+
+##### Parameters
+
+> | Key              | Type     | Data type      | Description                         |
+> |------------------|----------|----------------|-------------------------------------|
+> | id      		 | Required | int            | 类型id                               |
+> | limit      		 | Opt      | int            | 条数                                 |
+
+##### Responses
+
+> | Code        | Content-Type                      | Response                           |
+> |-------------|-----------------------------------|------------------------------------|
+> | `200`       | `text/plain;charset=UTF-8`        | OK (返回结构体) 					 |
+> | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
+> | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
+
+</details>
+
 ------------------------------------------------------------------------------------------
 
 https://gist.github.com/azagniotov/a4b16faf0febd12efbc6c3d7370383a6
