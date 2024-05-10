@@ -42,7 +42,7 @@ GET或POST，头部格式
 
 > | Key              | Type     | Data type      | Description                         |
 > |------------------|----------|----------------|-------------------------------------|
-> | phoneNumber      | Required | long           | 手机号                               |
+> | phoneNumber      | required | long           | 手机号                               |
 
 ##### Responses
 
@@ -61,8 +61,8 @@ GET或POST，头部格式
 
 > | Key              | Type     | Data type      | Description                         |
 > |------------------|----------|----------------|-------------------------------------|
-> | id      		 | Required | int            | 类型id                               |
-> | limit      		 | Opt      | int            | 条数                                 |
+> | id      		 | required | int            | 类型id                               |
+> | limit      		 | opt      | int            | 条数                                 |
 
 ##### Responses
 
