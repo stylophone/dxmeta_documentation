@@ -72,6 +72,11 @@ GET或POST，头部格式
 > | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
 > | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
 
+##### Example cURL
+
+> ```
+>  curl -X GET https://localhost:7278/search/type?id=0
+> ```
 
 ##### JSON返回示例
 
