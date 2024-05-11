@@ -17,21 +17,21 @@ GET或POST，头部格式
 <details>
 	<summary><code>GET</code> <code><b>/</b></code> <code>访问Root, 测试用. 无需验证</code></summary>
 
-##### Parameters
+  ##### Parameters
 
-> None
+  > None
 
-##### Responses
+  ##### Responses
 
-> | Code        | Content-Type                      | Response                           |
-> |-------------|-----------------------------------|------------------------------------|
-> | `200`       | `text/plain;charset=UTF-8`        | OK								 |
+  > | Code        | Content-Type                      | Response                           |
+  > |-------------|-----------------------------------|------------------------------------|
+  > | `200`       | `text/plain;charset=UTF-8`        | OK								 |
 
-##### Example cURL
+  ##### Example cURL
 
-> ```
-> curl -X GET -H "Content-Type: application/json" http://192.168.1.200:5054/
-> ```
+  > ```
+  > curl -X GET -H "Content-Type: application/json" http://192.168.1.200:5054/
+  > ```
 
 </details>
 
