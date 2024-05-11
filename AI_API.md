@@ -48,7 +48,7 @@ GET或POST，头部格式
 
 > | Code        | Content-Type                      | Response                           |
 > |-------------|-----------------------------------|------------------------------------|
-> | `200`       | `text/plain;charset=UTF-8`        | OK (返回JSON)						 |
+> | `200`       | `application/json`        | OK (返回JSON)						 |
 > | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
 
 ##### JSON返回示例
@@ -75,7 +75,7 @@ GET或POST，头部格式
 
 > | Code        | Content-Type                      | Response                           |
 > |-------------|-----------------------------------|------------------------------------|
-> | `200`       | `text/plain;charset=UTF-8`        | OK (返回JSON)						 |
+> | `200`       | `application/json`        | OK (返回JSON)						 |
 > | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
 
 ##### JSON返回示例
@@ -101,7 +101,7 @@ GET或POST，头部格式
 
 > | Code        | Content-Type                      | Response                           |
 > |-------------|-----------------------------------|------------------------------------|
-> | `200`       | `text/plain;charset=UTF-8`        | OK (返回新JSON) 					 |
+> | `200`       | `application/json`        | OK (返回新JSON) 					 |
 > | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
 > | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
 
@@ -129,7 +129,7 @@ GET或POST，头部格式
 
 > | Code        | Content-Type                      | Response                           |
 > |-------------|-----------------------------------|------------------------------------|
-> | `200`       | `text/plain;charset=UTF-8`        | OK (返回JSON) 					 |
+> | `200`       | `application/json`        | OK (返回JSON) 					 |
 > | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
 > | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
 
