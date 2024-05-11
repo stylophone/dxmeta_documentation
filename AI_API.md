@@ -101,7 +101,7 @@ GET或POST，头部格式
 
 > | Code        | Content-Type                      | Response                           |
 > |-------------|-----------------------------------|------------------------------------|
-> | `200`       | `application/json`        | OK (返回新JSON) 					 |
+> | `200`       | `application/json`        | OK (返回JSON) 					 |
 > | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
 > | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
 
