@@ -76,6 +76,7 @@ GET或POST，头部格式
 > | Code        | Content-Type                      | Response                           |
 > |-------------|-----------------------------------|------------------------------------|
 > | `200`       | `application/json`        | OK (返回JSON)						 |
+> | `401`       | `text/plain;charset=UTF-8`        | 验证码无效                         |
 > | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
 
 ##### JSON返回示例
