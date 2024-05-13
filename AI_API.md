@@ -118,6 +118,33 @@ GET或POST，头部格式
 </details>
 
 <details>
+  <summary><code>POST</code> <code><b>/user/register</b></code> <code>注册用户 TODO</code></summary>
+
+##### Parameters
+
+> | Key              | Type     | Data type      | Description                         |
+> |------------------|----------|----------------|-------------------------------------|
+> | phoneNumber      | required | long           | 手机号                               |
+
+##### Responses
+
+> | Code        | Content-Type                      | Response                           |
+> |-------------|-----------------------------------|------------------------------------|
+> | `200`       | `application/json`                | OK (返回JSON)                        |
+> | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
+> | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
+
+##### JSON返回示例
+
+```
+{
+  "userInfo": {}
+}
+```
+
+</details>
+
+<details>
   <summary><code>POST</code> <code><b>/user/update</b></code> <code>更新用户数据 TODO</code></summary>
 
 ##### Parameters
