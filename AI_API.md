@@ -69,14 +69,14 @@ GET或POST，头部格式
 > | Key              | Type     | Data type      | Description                         |
 > |------------------|----------|----------------|-------------------------------------|
 > | phoneNumber      | required | long           | 手机号                               |
-> | verifyCode      | required | int           | 验证码                               |
+> | verifyCode       | required | int            | 验证码                               |
 
 ##### Responses
 
 > | Code        | Content-Type                      | Response                           |
 > |-------------|-----------------------------------|------------------------------------|
-> | `200`       | `application/json`        | OK (返回JSON)						 |
-> | `401`       | `text/plain;charset=UTF-8`        | 验证码无效                         |
+> | `200`       | `application/json`                | OK (返回JSON)                       |
+> | `401`       | `text/plain;charset=UTF-8`        | 验证码无效                          |
 > | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
 
 ##### JSON返回示例
@@ -102,7 +102,7 @@ GET或POST，头部格式
 
 > | Code        | Content-Type                      | Response                           |
 > |-------------|-----------------------------------|------------------------------------|
-> | `200`       | `application/json`        | OK (返回JSON) 					 |
+> | `200`       | `application/json`                | OK (返回JSON) 		             			 |
 > | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
 > | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
 
@@ -110,7 +110,8 @@ GET或POST，头部格式
 
 ```
 {
-	"new_token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjRmNGZkYjE3LTFjMmUtNDg4OC04ZGYzLTg1ZjA5MTlmZDA0ZCIsImVtYWlsIjoiMTU5MDE0Mjk4MTYiLCJqdGkiOiIwMTcyODg5MC05ZmQ0LTQ4YjgtOTkzMi04NzAzZTg5MWJjZWEiLCJuYmYiOjE3MTUzOTQwNTMsImV4cCI6MTcxNTk5ODg1MywiaWF0IjoxNzE1Mzk0MDUzLCJpc3MiOiJodHRwczovL2pveWRpcGthbmppbGFsLmNvbS8iLCJhdWQiOiJodHRwczovL2pveWRpcGthbmppbGFsLmNvbS8ifQ.vSVHrVR4aQB5xEwutLglW0AXKNzSKcwu7dS2AiFQxMlVH9vCHvK6eL467yEpF2o0FwLKIaJsq6ic-dQsvONGPw"
+	"new_token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjRmNGZkYjE3LTFjMmUtNDg4OC04ZGYzLTg1ZjA5MTlmZDA0ZCIsImVtYWlsIjoiMTU5MDE0Mjk4MTYiLCJqdGkiOiIwMTcyODg5MC05ZmQ0LTQ4YjgtOTkzMi04NzAzZTg5MWJjZWEiLCJuYmYiOjE3MTUzOTQwNTMsImV4cCI6MTcxNTk5ODg1MywiaWF0IjoxNzE1Mzk0MDUzLCJpc3MiOiJodHRwczovL2pveWRpcGthbmppbGFsLmNvbS8iLCJhdWQiOiJodHRwczovL2pveWRpcGthbmppbGFsLmNvbS8ifQ.vSVHrVR4aQB5xEwutLglW0AXKNzSKcwu7dS2AiFQxMlVH9vCHvK6eL467yEpF2o0FwLKIaJsq6ic-dQsvONGPw",
+  "userInfo": {}
 }
 ```
 
@@ -123,14 +124,14 @@ GET或POST，头部格式
 
 > | Key              | Type     | Data type      | Description                         |
 > |------------------|----------|----------------|-------------------------------------|
-> | id      		 | required | int            | 类型id                               |
-> | limit      		 | opt      | int            | 条数                                 |
+> | id      	    	 | required | int            | 类型id                               |
+> | limit      	  	 | opt      | int            | 条数                                 |
 
 ##### Responses
 
 > | Code        | Content-Type                      | Response                           |
 > |-------------|-----------------------------------|------------------------------------|
-> | `200`       | `application/json`        | OK (返回JSON) 					 |
+> | `200`       | `application/json`                | OK (返回JSON) 		            			 |
 > | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
 > | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
 
