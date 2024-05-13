@@ -138,6 +138,21 @@ GET或POST，头部格式
 > | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
 > | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
 
+##### JSON发送示例
+
+```
+{
+    "phoneNumber": "15901429816",
+    "interests": [
+        1,
+        2
+    ],
+    "age": "11",
+    "gender": "0",
+    "profession": "1"
+}
+```
+
 </details>
 
 <details>
