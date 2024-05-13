@@ -127,8 +127,8 @@ GET或POST，头部格式
 > | phoneNumber      | required | long           | 手机号                               |
 > | age      | required | int           | 年龄                               |
 > | gender      | required | int           | 0 = 男, 1 = 女                               |
-> | profession      | required | int           | 读表数据                               |
-> | interests      | required | int[]           | int数组, tags id                               |
+> | profession      | required | int           | 职业, 读表数据                               |
+> | interests      | required | int[]           | 标签, int数组, 读表                               |
 
 ##### Responses
 
