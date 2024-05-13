@@ -134,7 +134,7 @@ GET或POST，头部格式
 
 > | Code        | Content-Type                      | Response                           |
 > |-------------|-----------------------------------|------------------------------------|
-> | `200`       | `application/json`                | OK                        |
+> | `200`       | `text/plain;charset=UTF-8`                | OK                        |
 > | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
 > | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
 
