@@ -48,16 +48,8 @@ GET或POST，头部格式
 
 > | Code        | Content-Type                      | Response                           |
 > |-------------|-----------------------------------|------------------------------------|
-> | `200`       | `application/json`        | OK (返回JSON)						 |
+> | `200`       | `application/json`        | OK						 |
 > | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
-
-##### JSON返回示例
-
-```
-{
-	"verifyCode": 123456
-}
-```
 
 </details>
 
