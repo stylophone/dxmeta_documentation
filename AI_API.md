@@ -90,7 +90,7 @@ GET或POST，头部格式
 </details>
 
 <details>
-	<summary><code>POST</code> <code><b>/login</b></code> <code>登录</code></summary>
+	<summary><code>POST</code> <code><b>/user/login</b></code> <code>登录</code></summary>
 
 ##### Parameters
 
