@@ -92,12 +92,6 @@ GET或POST，头部格式
 <details>
 	<summary><code>POST</code> <code><b>/user/login</b></code> <code>登录</code></summary>
 
-##### Parameters
-
-> | Key              | Type     | Data type      | Description                         |
-> |------------------|----------|----------------|-------------------------------------|
-> | phoneNumber      | required | long           | 手机号                               |
-
 ##### Responses
 
 > | Code        | Content-Type                      | Response                           |
@@ -124,7 +118,6 @@ GET或POST，头部格式
 
 > | Key              | Type     | Data type      | Description                         |
 > |------------------|----------|----------------|-------------------------------------|
-> | phoneNumber      | required | long           | 手机号                               |
 > | age      | required | int           | 年龄                               |
 > | gender      | required | int           | 0 = 男, 1 = 女                               |
 > | profession      | required | int           | 职业, 读表数据                               |
@@ -142,7 +135,6 @@ GET或POST，头部格式
 
 ```
 {
-    "phoneNumber": 15901429816,
     "interests": [
         1,
         2
@@ -157,12 +149,6 @@ GET或POST，头部格式
 
 <details>
   <summary><code>POST</code> <code><b>/user/update</b></code> <code>更新用户数据 TODO</code></summary>
-
-##### Parameters
-
-> | Key              | Type     | Data type      | Description                         |
-> |------------------|----------|----------------|-------------------------------------|
-> | phoneNumber      | required | long           | 手机号                               |
 
 ##### Responses
 
