@@ -278,6 +278,25 @@ GET或POST，头部格式
 
 </details>
 
+<details>
+  <summary><code>POST</code> <code><b>/dify/chat-messages</b></code> <code>Dify聊天</code></summary>
+
+##### Parameters
+
+> | Key              | Type     | Data type      | Description                         |
+> |------------------|----------|----------------|-------------------------------------|
+> | dify_id      | required | string           | Dify应用Id                               |
+
+##### Responses
+
+> | Code        | Content-Type                      | Response                           |
+> |-------------|-----------------------------------|------------------------------------|
+> | `200`       | `application/json`                | OK (Dify返回格式)                        |
+> | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
+> | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
+
+</details>
+
 ------------------------------------------------------------------------------------------
 
 https://gist.github.com/azagniotov/a4b16faf0febd12efbc6c3d7370383a6
