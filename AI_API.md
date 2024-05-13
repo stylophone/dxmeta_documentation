@@ -281,7 +281,7 @@ GET或POST，头部格式
 <details>
   <summary><code>POST</code> <code><b>/dify/chat-messages</b></code> <code>Dify聊天</code></summary>
 
-##### Parameters
+##### Headers
 
 > | Key              | Type     | Data type      | Description                         |
 > |------------------|----------|----------------|-------------------------------------|
