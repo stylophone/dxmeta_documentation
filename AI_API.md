@@ -286,6 +286,11 @@ GET或POST，头部格式
 > | Key              | Type     | Data type      | Description                         |
 > |------------------|----------|----------------|-------------------------------------|
 > | dify_id      | required | string           | Dify应用Id                               |
+> 
+> 
+##### Parameters
+
+> <b>使用Dify的body</b>
 
 ##### Responses
 
