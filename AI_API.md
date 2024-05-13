@@ -142,14 +142,14 @@ GET或POST，头部格式
 
 ```
 {
-    "phoneNumber": "15901429816",
+    "phoneNumber": 15901429816,
     "interests": [
         1,
         2
     ],
-    "age": "11",
-    "gender": "0",
-    "profession": "1"
+    "age": 11,
+    "gender": 0,
+    "profession": 1
 }
 ```
 
