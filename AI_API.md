@@ -302,6 +302,38 @@ GET或POST，头部格式
 
 </details>
 
+<details>
+  <summary><code>POST</code> <code><b>/upload/image</b></code> <code>上传图片</code></summary>
+
+##### Headers
+
+> | Key              | Type     | Data type      | Description                         |
+> |------------------|----------|----------------|-------------------------------------|
+> | Content-Type      | required | string           | image/png或image/jpeg                               |
+> 
+> 
+##### Parameters
+
+> <b>Body部分直接传入文件二进制</b>
+
+##### Responses
+
+> | Code        | Content-Type                      | Response                           |
+> |-------------|-----------------------------------|------------------------------------|
+> | `200`       | `application/json`                | OK (返回JSON, 含相对路径)                        |
+> | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
+> | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
+
+##### JSON返回示例
+
+```
+{
+  "relativePath": "images/1715765038676.png"
+}
+```
+
+</details>
+
 ------------------------------------------------------------------------------------------
 
 https://gist.github.com/azagniotov/a4b16faf0febd12efbc6c3d7370383a6
