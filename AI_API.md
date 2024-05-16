@@ -334,6 +334,30 @@ GET或POST，头部格式
 
 </details>
 
+<details>
+  <summary><code>POST</code> <code><b>/create/agent</b></code> <code>创建AI</code></summary>
+
+##### Parameters
+
+> | Key              | Type     | Data type      | Description                         |
+> |------------------|----------|----------------|-------------------------------------|
+> | name               | required | string            | 名字                               |
+> | gender            | required    | int            | 性别                                 |
+> | desc            | required    | string            | 描述                                 |
+> | type            | required    | int            | 分类类型                                 |
+> | icon            | required    | string            | 头像Icon相对路径                                 |
+> | prompt            | required    | string            | 提示词                                |
+
+##### Responses
+
+> | Code        | Content-Type                      | Response                           |
+> |-------------|-----------------------------------|------------------------------------|
+> | `200`       | `application/json`                | OK                    |
+> | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
+> | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
+
+</details>
+
 ------------------------------------------------------------------------------------------
 
 https://gist.github.com/azagniotov/a4b16faf0febd12efbc6c3d7370383a6
