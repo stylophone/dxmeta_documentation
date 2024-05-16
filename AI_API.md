@@ -345,7 +345,7 @@ GET或POST，头部格式
 > | gender            | required    | int            | 性别                                 |
 > | desc            | required    | string            | 描述                                 |
 > | type            | required    | int            | 分类类型                                 |
-> | icon            | required    | string            | 头像Icon相对路径                                 |
+> | icon            | required    | string            | 头像Icon URL相对路径                                 |
 > | prompt            | required    | string            | 提示词                                |
 
 ##### Responses
