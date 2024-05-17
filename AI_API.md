@@ -121,6 +121,7 @@ GET或POST，头部格式
 
 > | Key              | Type     | Data type      | Description                         |
 > |------------------|----------|----------------|-------------------------------------|
+> | name      | required | string           | 姓名                               |
 > | age      | required | int           | 年龄                               |
 > | gender      | required | int           | 0 = 男, 1 = 女                               |
 > | profession      | required | int           | 职业, 读表数据                               |
@@ -138,6 +139,7 @@ GET或POST，头部格式
 
 ```
 {
+    "name": "田帅帅",
     "interests": [
         1,
         2
