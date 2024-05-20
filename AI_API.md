@@ -105,10 +105,7 @@ GET或POST，头部格式
     "phoneNumber": 15901429816,
     "age": 11,
     "gender": 0,
-    "interests": [
-        1,
-        2
-    ],
+    "interests": "1,2",
     "profession": 1,
     "created_at": "2024-05-13T18:34:43"
   }
