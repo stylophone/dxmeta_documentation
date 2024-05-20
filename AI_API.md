@@ -99,13 +99,16 @@ GET或POST，头部格式
   "new_token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjYyOTU2MjAzLTA2YTItNGM2NS1iM2M2LTMwNTY2NjI2ZTYyNiIsInVpZCI6IjMiLCJqdGkiOiI2MmZlYWVhYS0zMTI0LTQ1NjAtYjVmMi03ZDYxZmYzNmJhMjMiLCJuYmYiOjE3MTU1OTcwOTMsImV4cCI6MTcxNjIwMTg5MywiaWF0IjoxNzE1NTk3MDkzLCJpc3MiOiJodHRwczovL2Rxc2R4LmNuLyIsImF1ZCI6Imh0dHBzOi8vZHFzZHguY24vIn0.95kL6gLjhPCLECZ7QgUQr5hHdfLkFHYY5yWZskt2ipjIZk2KFaELZdft2Nf_fLYBB82CffGR9pzMFDKFuXl-2g",
   "userInfo": {
     "id": 3,
-    "nickname": null,
+    "name": "田帅帅",
     "avatar": null,
     "coins": 0,
     "phoneNumber": 15901429816,
     "age": 11,
     "gender": 0,
-    "interests": "1,2",
+    "interests": [
+        1,
+        2
+    ],
     "profession": 1,
     "created_at": "2024-05-13T18:34:43"
   }
