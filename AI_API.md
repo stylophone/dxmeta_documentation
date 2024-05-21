@@ -99,13 +99,16 @@ GET或POST，头部格式
   "new_token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjYyOTU2MjAzLTA2YTItNGM2NS1iM2M2LTMwNTY2NjI2ZTYyNiIsInVpZCI6IjMiLCJqdGkiOiI2MmZlYWVhYS0zMTI0LTQ1NjAtYjVmMi03ZDYxZmYzNmJhMjMiLCJuYmYiOjE3MTU1OTcwOTMsImV4cCI6MTcxNjIwMTg5MywiaWF0IjoxNzE1NTk3MDkzLCJpc3MiOiJodHRwczovL2Rxc2R4LmNuLyIsImF1ZCI6Imh0dHBzOi8vZHFzZHguY24vIn0.95kL6gLjhPCLECZ7QgUQr5hHdfLkFHYY5yWZskt2ipjIZk2KFaELZdft2Nf_fLYBB82CffGR9pzMFDKFuXl-2g",
   "userInfo": {
     "id": 3,
-    "name": "田帅帅",
+    "name": "mingzi",
     "avatar": null,
     "coins": 0,
     "phoneNumber": 15901429816,
-    "age": 11,
+    "age": 113,
     "gender": 0,
-    "interests": "1,2",
+    "interests": [
+      1,
+      2
+    ],
     "profession": 1,
     "created_at": "2024-05-13T18:34:43"
   }
@@ -147,56 +150,6 @@ GET或POST，头部格式
     "age": 11,
     "gender": 0,
     "profession": 1
-}
-```
-
-</details>
-
-<details>
-  <summary><code>POST</code> <code><b>/user/update</b></code> <code>更新用户数据 TODO</code></summary>
-
-##### Responses
-
-> | Code        | Content-Type                      | Response                           |
-> |-------------|-----------------------------------|------------------------------------|
-> | `200`       | `application/json`                | OK (返回JSON)                        |
-> | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
-> | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
-
-##### JSON返回示例
-
-```
-{
-  "new_token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjRmNGZkYjE3LTFjMmUtNDg4OC04ZGYzLTg1ZjA5MTlmZDA0ZCIsImVtYWlsIjoiMTU5MDE0Mjk4MTYiLCJqdGkiOiIwMTcyODg5MC05ZmQ0LTQ4YjgtOTkzMi04NzAzZTg5MWJjZWEiLCJuYmYiOjE3MTUzOTQwNTMsImV4cCI6MTcxNTk5ODg1MywiaWF0IjoxNzE1Mzk0MDUzLCJpc3MiOiJodHRwczovL2pveWRpcGthbmppbGFsLmNvbS8iLCJhdWQiOiJodHRwczovL2pveWRpcGthbmppbGFsLmNvbS8ifQ.vSVHrVR4aQB5xEwutLglW0AXKNzSKcwu7dS2AiFQxMlVH9vCHvK6eL467yEpF2o0FwLKIaJsq6ic-dQsvONGPw",
-  "userInfo": {}
-}
-```
-
-</details>
-
-<details>
-  <summary><code>GET</code> <code><b>/type/list</b></code> <code>获取类型列表 TODO</code></summary>
-
-##### Parameters
-
-> | Key              | Type     | Data type      | Description                         |
-> |------------------|----------|----------------|-------------------------------------|
-> | phoneNumber      | required | long           | 手机号                               |
-
-##### Responses
-
-> | Code        | Content-Type                      | Response                           |
-> |-------------|-----------------------------------|------------------------------------|
-> | `200`       | `application/json`                | OK (返回JSON)                        |
-> | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
-> | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
-
-##### JSON返回示例
-
-```
-{
-  "new_token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjRmNGZkYjE3LTFjMmUtNDg4OC04ZGYzLTg1ZjA5MTlmZDA0ZCIsImVtYWlsIjoiMTU5MDE0Mjk4MTYiLCJqdGkiOiIwMTcyODg5MC05ZmQ0LTQ4YjgtOTkzMi04NzAzZTg5MWJjZWEiLCJuYmYiOjE3MTUzOTQwNTMsImV4cCI6MTcxNTk5ODg1MywiaWF0IjoxNzE1Mzk0MDUzLCJpc3MiOiJodHRwczovL2pveWRpcGthbmppbGFsLmNvbS8iLCJhdWQiOiJodHRwczovL2pveWRpcGthbmppbGFsLmNvbS8ifQ.vSVHrVR4aQB5xEwutLglW0AXKNzSKcwu7dS2AiFQxMlVH9vCHvK6eL467yEpF2o0FwLKIaJsq6ic-dQsvONGPw",
-  "userInfo": {}
 }
 ```
 
@@ -357,6 +310,60 @@ GET或POST，头部格式
 > | `200`       | `application/json`                | OK                    |
 > | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
 > | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
+
+</details>
+
+------------------------------------------------------------------------------------------
+
+TODO
+
+<details>
+  <summary><code>POST</code> <code><b>/user/update</b></code> <code>更新用户数据 TODO</code></summary>
+
+##### Responses
+
+> | Code        | Content-Type                      | Response                           |
+> |-------------|-----------------------------------|------------------------------------|
+> | `200`       | `application/json`                | OK (返回JSON)                        |
+> | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
+> | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
+
+##### JSON返回示例
+
+```
+{
+  "new_token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjRmNGZkYjE3LTFjMmUtNDg4OC04ZGYzLTg1ZjA5MTlmZDA0ZCIsImVtYWlsIjoiMTU5MDE0Mjk4MTYiLCJqdGkiOiIwMTcyODg5MC05ZmQ0LTQ4YjgtOTkzMi04NzAzZTg5MWJjZWEiLCJuYmYiOjE3MTUzOTQwNTMsImV4cCI6MTcxNTk5ODg1MywiaWF0IjoxNzE1Mzk0MDUzLCJpc3MiOiJodHRwczovL2pveWRpcGthbmppbGFsLmNvbS8iLCJhdWQiOiJodHRwczovL2pveWRpcGthbmppbGFsLmNvbS8ifQ.vSVHrVR4aQB5xEwutLglW0AXKNzSKcwu7dS2AiFQxMlVH9vCHvK6eL467yEpF2o0FwLKIaJsq6ic-dQsvONGPw",
+  "userInfo": {}
+}
+```
+
+</details>
+
+<details>
+  <summary><code>GET</code> <code><b>/type/list</b></code> <code>获取类型列表 TODO</code></summary>
+
+##### Parameters
+
+> | Key              | Type     | Data type      | Description                         |
+> |------------------|----------|----------------|-------------------------------------|
+> | phoneNumber      | required | long           | 手机号                               |
+
+##### Responses
+
+> | Code        | Content-Type                      | Response                           |
+> |-------------|-----------------------------------|------------------------------------|
+> | `200`       | `application/json`                | OK (返回JSON)                        |
+> | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
+> | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
+
+##### JSON返回示例
+
+```
+{
+  "new_token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjRmNGZkYjE3LTFjMmUtNDg4OC04ZGYzLTg1ZjA5MTlmZDA0ZCIsImVtYWlsIjoiMTU5MDE0Mjk4MTYiLCJqdGkiOiIwMTcyODg5MC05ZmQ0LTQ4YjgtOTkzMi04NzAzZTg5MWJjZWEiLCJuYmYiOjE3MTUzOTQwNTMsImV4cCI6MTcxNTk5ODg1MywiaWF0IjoxNzE1Mzk0MDUzLCJpc3MiOiJodHRwczovL2pveWRpcGthbmppbGFsLmNvbS8iLCJhdWQiOiJodHRwczovL2pveWRpcGthbmppbGFsLmNvbS8ifQ.vSVHrVR4aQB5xEwutLglW0AXKNzSKcwu7dS2AiFQxMlVH9vCHvK6eL467yEpF2o0FwLKIaJsq6ic-dQsvONGPw",
+  "userInfo": {}
+}
+```
 
 </details>
 
