@@ -273,12 +273,12 @@ GET或POST，头部格式
 
 > | Key              | Type     | Data type      | Description                         |
 > |------------------|----------|----------------|-------------------------------------|
-> | name               | required | string            | 名字                               |
-> | gender            | required    | int            | 性别                                 |
-> | desc            | required    | string            | 描述                                 |
-> | type            | required    | int            | 分类类型                                 |
-> | icon            | required    | string            | 头像Icon URL相对路径                                 |
-> | prompt            | required    | string            | 提示词                                |
+> | name             | required | string         | 名字                                 |
+> | gender           | required | int            | 性别                                 |
+> | desc             | required | string         | 描述                                 |
+> | type             | required | int            | 分类类型                              |
+> | icon             | required | string         | 头像Icon URL相对路径                  |
+> | prompt           | required | string         | 提示词                                |
 
 ##### Responses
 
@@ -297,7 +297,7 @@ GET或POST，头部格式
 
 > | Key              | Type     | Data type      | Description                         |
 > |------------------|----------|----------------|-------------------------------------|
-> | id               | required | int            | Agent Id                               |
+> | id               | required | int            | Agent Id                            |
 
 ##### Responses
 
@@ -317,7 +317,8 @@ GET或POST，头部格式
   "type": 1,
   "dify_id": "1606443f-c015-4245-b8c4-a54dc13db4bd",
   "public": true,
-  "avatar": null
+  "avatar": null,
+  "intimacy": 11  // 亲密度
 }
 ```
 
@@ -381,13 +382,13 @@ TODO
 
 > | Code        | Content-Type                      | Response                           |
 > |-------------|-----------------------------------|------------------------------------|
-> | `200`       | `application/json`                | OK (返回JSON)                        |
+> | `200`       | `application/json`                | OK (返回JSON)                       |
 > | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
 > | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
 
 ##### JSON返回示例
 
-```
+```js
 {
   "new_token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjRmNGZkYjE3LTFjMmUtNDg4OC04ZGYzLTg1ZjA5MTlmZDA0ZCIsImVtYWlsIjoiMTU5MDE0Mjk4MTYiLCJqdGkiOiIwMTcyODg5MC05ZmQ0LTQ4YjgtOTkzMi04NzAzZTg5MWJjZWEiLCJuYmYiOjE3MTUzOTQwNTMsImV4cCI6MTcxNTk5ODg1MywiaWF0IjoxNzE1Mzk0MDUzLCJpc3MiOiJodHRwczovL2pveWRpcGthbmppbGFsLmNvbS8iLCJhdWQiOiJodHRwczovL2pveWRpcGthbmppbGFsLmNvbS8ifQ.vSVHrVR4aQB5xEwutLglW0AXKNzSKcwu7dS2AiFQxMlVH9vCHvK6eL467yEpF2o0FwLKIaJsq6ic-dQsvONGPw",
   "userInfo": {}
@@ -415,7 +416,7 @@ TODO
 
 ##### JSON返回示例
 
-```
+```js
 {
   "new_token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjRmNGZkYjE3LTFjMmUtNDg4OC04ZGYzLTg1ZjA5MTlmZDA0ZCIsImVtYWlsIjoiMTU5MDE0Mjk4MTYiLCJqdGkiOiIwMTcyODg5MC05ZmQ0LTQ4YjgtOTkzMi04NzAzZTg5MWJjZWEiLCJuYmYiOjE3MTUzOTQwNTMsImV4cCI6MTcxNTk5ODg1MywiaWF0IjoxNzE1Mzk0MDUzLCJpc3MiOiJodHRwczovL2pveWRpcGthbmppbGFsLmNvbS8iLCJhdWQiOiJodHRwczovL2pveWRpcGthbmppbGFsLmNvbS8ifQ.vSVHrVR4aQB5xEwutLglW0AXKNzSKcwu7dS2AiFQxMlVH9vCHvK6eL467yEpF2o0FwLKIaJsq6ic-dQsvONGPw",
   "userInfo": {}
