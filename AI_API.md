@@ -303,9 +303,23 @@ GET或POST，头部格式
 
 > | Code        | Content-Type                      | Response                           |
 > |-------------|-----------------------------------|------------------------------------|
-> | `200`       | `application/json`                | OK                    |
+> | `200`       | `application/json`                | OK（返回Agent Json）                |
 > | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
 > | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
+
+##### JSON返回示例
+
+```js
+{
+  "id": 1,
+  "name": "段飞",
+  "gender": 0,
+  "type": 1,
+  "dify_id": "1606443f-c015-4245-b8c4-a54dc13db4bd",
+  "public": true,
+  "avatar": null
+}
+```
 
 </details>
 
