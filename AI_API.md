@@ -73,7 +73,7 @@ GET或POST，头部格式
 
 ##### JSON返回示例
 
-```
+```js
 {
 	"token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjRmNGZkYjE3LTFjMmUtNDg4OC04ZGYzLTg1ZjA5MTlmZDA0ZCIsImVtYWlsIjoiMTU5MDE0Mjk4MTYiLCJqdGkiOiIwMTcyODg5MC05ZmQ0LTQ4YjgtOTkzMi04NzAzZTg5MWJjZWEiLCJuYmYiOjE3MTUzOTQwNTMsImV4cCI6MTcxNTk5ODg1MywiaWF0IjoxNzE1Mzk0MDUzLCJpc3MiOiJodHRwczovL2pveWRpcGthbmppbGFsLmNvbS8iLCJhdWQiOiJodHRwczovL2pveWRpcGthbmppbGFsLmNvbS8ifQ.vSVHrVR4aQB5xEwutLglW0AXKNzSKcwu7dS2AiFQxMlVH9vCHvK6eL467yEpF2o0FwLKIaJsq6ic-dQsvONGPw"
 }
@@ -94,7 +94,7 @@ GET或POST，头部格式
 
 ##### JSON返回示例
 
-```
+```js
 {
   "new_token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjYyOTU2MjAzLTA2YTItNGM2NS1iM2M2LTMwNTY2NjI2ZTYyNiIsInVpZCI6IjMiLCJqdGkiOiI2MmZlYWVhYS0zMTI0LTQ1NjAtYjVmMi03ZDYxZmYzNmJhMjMiLCJuYmYiOjE3MTU1OTcwOTMsImV4cCI6MTcxNjIwMTg5MywiaWF0IjoxNzE1NTk3MDkzLCJpc3MiOiJodHRwczovL2Rxc2R4LmNuLyIsImF1ZCI6Imh0dHBzOi8vZHFzZHguY24vIn0.95kL6gLjhPCLECZ7QgUQr5hHdfLkFHYY5yWZskt2ipjIZk2KFaELZdft2Nf_fLYBB82CffGR9pzMFDKFuXl-2g",
   "userInfo": {
@@ -140,7 +140,7 @@ GET或POST，头部格式
 
 ##### JSON发送示例
 
-```
+```js
 {
     "name": "田帅帅",
     "interests": [
@@ -181,7 +181,7 @@ GET或POST，头部格式
 
 ##### JSON返回示例
 
-```
+```js
 {
   "tags": [
     {
@@ -256,11 +256,11 @@ GET或POST，头部格式
 
 ##### JSON返回示例
 
-> ```
-> {
->   "relativePath": "images/1715765038676.png"
-> }
-> ```
+```js
+{
+  "relativePath": "images/1715765038676.png"
+}
+```
 
 </details>
 
