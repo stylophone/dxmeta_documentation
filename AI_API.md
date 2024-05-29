@@ -339,7 +339,7 @@ GET或POST，头部格式
 
 > | Key              | Type     | Data type      | Description                     |
 > |------------------|----------|----------------|---------------------------------|
-> | agent_id         | required | string         | Agent Id                        |
+> | agent_id         | required | int         | Agent Id                        |
 > | dify_id          | required | string         | Dify应用Id                       |
 
 ##### Parameters
