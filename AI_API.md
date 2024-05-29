@@ -1,4 +1,4 @@
-## AI App APIs
+# AI App APIs
 
 - 测试服务器: http://192.168.1.200:5054/
 
@@ -12,7 +12,7 @@ GET或POST，头部格式
 
 ------------------------------------------------------------------------------------------
 
-#### 主要API
+## 主要API
 
 <details>
 	<summary><code>GET</code> <code><b>/</b></code> <code>访问Root, 测试用. 无需验证</code></summary>
@@ -48,7 +48,7 @@ GET或POST，头部格式
 
 > | Code        | Content-Type                      | Response                           |
 > |-------------|-----------------------------------|------------------------------------|
-> | `200`       | `application/json`        | OK						 |
+> | `200`       | `application/json`                | OK                                 |
 > | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
 
 </details>
@@ -234,39 +234,14 @@ GET或POST，头部格式
 </details>
 
 <details>
-  <summary><code>POST</code> <code><b>/dify/chat-messages</b></code> <code>Dify聊天</code></summary>
-
-##### Headers
-
-> | Key              | Type     | Data type      | Description                         |
-> |------------------|----------|----------------|-------------------------------------|
-> | dify_id      | required | string           | Dify应用Id                               |
-> 
-> 
-##### Parameters
-
-> <b>使用Dify的body</b>
-
-##### Responses
-
-> | Code        | Content-Type                      | Response                           |
-> |-------------|-----------------------------------|------------------------------------|
-> | `200`       | `application/json`                | OK (Dify返回格式)                        |
-> | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
-> | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
-
-</details>
-
-<details>
   <summary><code>POST</code> <code><b>/upload/image</b></code> <code>上传图片</code></summary>
 
 ##### Headers
 
 > | Key              | Type     | Data type      | Description                         |
 > |------------------|----------|----------------|-------------------------------------|
-> | Content-Type      | required | string           | image/png或image/jpeg                               |
-> 
-> 
+> | Content-Type     | required | string         | image/png或image/jpeg               |
+
 ##### Parameters
 
 > <b>Body部分直接传入文件二进制</b>
@@ -275,22 +250,24 @@ GET或POST，头部格式
 
 > | Code        | Content-Type                      | Response                           |
 > |-------------|-----------------------------------|------------------------------------|
-> | `200`       | `application/json`                | OK (返回JSON, 含相对路径)                        |
+> | `200`       | `application/json`                | OK (返回JSON, 含相对路径)            |
 > | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
 > | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
 
 ##### JSON返回示例
 
-```
-{
-  "relativePath": "images/1715765038676.png"
-}
-```
+> ```
+> {
+>   "relativePath": "images/1715765038676.png"
+> }
+> ```
 
 </details>
 
+### Agent相关接口
+
 <details>
-  <summary><code>POST</code> <code><b>/create/agent</b></code> <code>创建AI</code></summary>
+  <summary><code>POST</code> <code><b>/create/agent</b></code> <code>创建AI Agent</code></summary>
 
 ##### Parameters
 
@@ -308,6 +285,72 @@ GET或POST，头部格式
 > | Code        | Content-Type                      | Response                           |
 > |-------------|-----------------------------------|------------------------------------|
 > | `200`       | `application/json`                | OK                    |
+> | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
+> | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
+
+</details>
+
+<details>
+  <summary><code>GET</code> <code><b>/query/agent</b></code> <code>查询Agent信息</code></summary>
+
+##### Parameters
+
+> | Key              | Type     | Data type      | Description                         |
+> |------------------|----------|----------------|-------------------------------------|
+> | id               | required | int            | Agent Id                               |
+
+##### Responses
+
+> | Code        | Content-Type                      | Response                           |
+> |-------------|-----------------------------------|------------------------------------|
+> | `200`       | `application/json`                | OK                    |
+> | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
+> | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
+
+</details>
+
+------------------------------------------------------------------------------------------
+
+## Dify相关接口
+
+<details>
+  <summary><code>GET</code> <code><b>/dify/startConversation</b></code> <code>会话开始前调用</code></summary>
+
+##### Parameters
+
+> | Key              | Type     | Data type      | Description                         |
+> |------------------|----------|----------------|-------------------------------------|
+> | agent_id         | required | int            | agent id                            |
+
+##### Responses
+
+> | Code        | Content-Type                      | Response                           |
+> |-------------|-----------------------------------|------------------------------------|
+> | `200`       | `application/json`                | OK                                 |
+> | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
+> | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
+
+</details>
+
+<details>
+  <summary><code>POST</code> <code><b>/dify/chat-messages</b></code> <code>Dify聊天</code></summary>
+
+##### Headers
+
+> | Key              | Type     | Data type      | Description                     |
+> |------------------|----------|----------------|---------------------------------|
+> | agent_id         | required | string         | Agent Id                        |
+> | dify_id          | required | string         | Dify应用Id                       |
+
+##### Parameters
+
+> <b>使用Dify的body</b>
+
+##### Responses
+
+> | Code        | Content-Type                      | Response                           |
+> |-------------|-----------------------------------|------------------------------------|
+> | `200`       | `application/json`                | OK (Dify返回格式)                   |
 > | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
 > | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
 
