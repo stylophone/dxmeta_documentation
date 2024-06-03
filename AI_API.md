@@ -101,7 +101,7 @@ GET或POST，头部格式
     "id": 3,
     "name": "mingzi",
     "avatar": null,
-    "coins": 0,
+    "diamonds": 0,
     "phoneNumber": 15901429816,
     "age": 113,
     "gender": 0,
