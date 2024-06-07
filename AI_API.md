@@ -156,6 +156,70 @@ GET或POST，头部格式
 </details>
 
 <details>
+  <summary><code>GET</code> <code><b>/search/keyword</b></code> <code>按关键字搜索</code></summary>
+
+##### Parameters
+
+> | Key              | Type     | Data type      | Description                         |
+> |------------------|----------|----------------|-------------------------------------|
+> | value               | required | string            | 关键字 (标签名称或agent名称) |
+
+##### Responses
+
+> | Code        | Content-Type                      | Response                           |
+> |-------------|-----------------------------------|------------------------------------|
+> | `200`       | `application/json`                | OK（返回JSON，固定最大15条）                        |
+> | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
+> | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
+
+##### Example cURL
+
+> ```
+> curl -v -X GET 'https://localhost:7278/search/keyword?value=男'
+> ```
+
+##### JSON示例
+
+```js
+{
+  "tags": [
+    {
+      "id": 1,
+      "name": "校园"
+    }
+  ],
+  "agents": [
+    {
+      "id": 7,
+      "name": "暖男",
+      "gender": 0,
+      "type": 1,
+      "dify_id": "40c55ab4-907a-484e-a0f1-adc2197fd124",
+      "public": true,
+      "avatar": null,
+      "desc": "你好，我是心理咨询师暖男。很高兴与你相识，有什么想聊的都可以告诉我哦。无论是关于工作、生活还是情感方面的问题，我都会尽力帮助你解答和提供建议。",
+      "tags": [
+        1
+      ]
+    },
+    {
+      "id": 8,
+      "name": "渣男",
+      "gender": 0,
+      "type": 1,
+      "dify_id": "e8e714bf-1275-4988-b13a-425ab3c5bf5c",
+      "public": true,
+      "avatar": null,
+      "desc": "我是李煜辰，一个金融公司的高级管理层。我热衷于钢琴和高尔夫球，同时也在社交场合中展现出自己的魅力和影响力。",
+      "tags": [
+        1
+      ]
+    }
+  ]
+}
+```
+
+<details>
 	<summary><code>GET</code> <code><b>/search/type</b></code> <code>按类型搜索</code></summary>
 
 ##### Parameters
