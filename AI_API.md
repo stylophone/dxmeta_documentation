@@ -162,7 +162,7 @@ GET或POST，头部格式
 
 > | Key              | Type     | Data type      | Description                         |
 > |------------------|----------|----------------|-------------------------------------|
-> | value               | required | string            | 关键字 (标签名称或agent名称) |
+> | value               | required | string            | 关键字（标签名称或agent名称） |
 
 ##### Responses
 
@@ -218,6 +218,7 @@ GET或POST，头部格式
   ]
 }
 ```
+</details>
 
 <details>
 	<summary><code>GET</code> <code><b>/search/type</b></code> <code>按类型搜索</code></summary>
