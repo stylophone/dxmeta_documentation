@@ -218,6 +218,7 @@ GET或POST，头部格式
   ]
 }
 ```
+</details>
 
 <details>
 	<summary><code>GET</code> <code><b>/search/type</b></code> <code>按类型搜索</code></summary>
