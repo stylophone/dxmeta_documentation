@@ -332,6 +332,54 @@ GET或POST，头部格式
 
 </details>
 
+<details>
+  <summary><code>POST</code> <code><b>/query/tags</b></code> <code>查询tag信息</code></summary>
+
+##### Parameters
+
+> | Key              | Type     | Data type      | Description                         |
+> |------------------|----------|----------------|-------------------------------------|
+> | tags               | required | array<int>            | int类型json数组, 值为tag的id  |
+
+##### Responses
+
+> | Code        | Content-Type                      | Response                           |
+> |-------------|-----------------------------------|------------------------------------|
+> | `200`       | `application/json`                | OK (返回JSON)                        |
+> | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
+> | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
+
+##### Example cURL
+
+> ```
+> curl -v -X POST 'https://localhost:7278/query/tags'
+> ```
+
+##### JSON返回示例
+
+```js
+[
+  {
+    "id": 1,
+    "name": "校园"
+  },
+  {
+    "id": 2,
+    "name": "乙女"
+  },
+  {
+    "id": 4,
+    "name": "三个字"
+  },
+  {
+    "id": 5,
+    "name": "1"
+  }
+]
+```
+
+</details>
+
 ### Agent相关接口
 
 <details>
