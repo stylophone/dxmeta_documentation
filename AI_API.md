@@ -339,7 +339,7 @@ GET或POST，头部格式
 
 > | Key              | Type     | Data type      | Description                         |
 > |------------------|----------|----------------|-------------------------------------|
-> | tags               | required | array<int>            | int类型json数组, 值为tag的id  |
+> | tags               | required | int[]            | int类型json数组, 值为tag的id  |
 
 ##### Responses
 
