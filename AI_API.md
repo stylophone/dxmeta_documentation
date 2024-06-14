@@ -349,11 +349,15 @@ GET或POST，头部格式
 > | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
 > | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
 
-##### Example cURL
+##### 请求Body
 
-> ```
-> curl -v -X POST 'https://localhost:7278/query/tags'
-> ```
+```js
+{
+  "tags": [
+    1,2,3,4,5
+  ]
+}
+````
 
 ##### JSON返回示例
 
