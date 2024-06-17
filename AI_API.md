@@ -399,6 +399,7 @@ GET或POST，头部格式
 > | type             | required | int            | 分类类型                              |
 > | icon             | required | string         | 头像Icon URL相对路径                  |
 > | prompt           | required | string         | 提示词                                |
+> | tags           | required | int[]         | tags数组                                |
 
 ##### Responses
 
@@ -407,6 +408,21 @@ GET或POST，头部格式
 > | `200`       | `application/json`                | OK                    |
 > | `400`       | `text/plain;charset=UTF-8`        | BadRequest                         |
 > | `401`       | `text/plain;charset=UTF-8`        | 验证失败                            |
+
+
+##### JSON请求示例
+
+```js
+{
+  "name": "测试",
+  "desc": "测试agent",
+  "gender": 1,
+  "type": 1,
+  "icon": "someurl",
+  "prompt": "测试prompt",
+  "tags": [1,2,3,4,5]
+}
+```
 
 </details>
 
